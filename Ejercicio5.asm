@@ -29,6 +29,28 @@ out portb,aux
 	mov r8,r25
 	ldi r26,$6F
 	mov r9,r26
+	clr zh
+
+rjmp leer
+
+retencion:
+	ldi zl,0
+	cpi aux,10
+	brcc retencionMayor
+	add zl,aux
+	ld aux,z
+	out porta,r0
+	out portc,aux
+	rjmp leer
+
+retencionMayor:
+	ldi r22,10
+	sub aux,r22
+	add zl,aux
+	ld aux,z
+	out porta,r1
+	out portc,aux
+
 
 leer:
 	in aux,pinb
@@ -37,6 +59,8 @@ leer:
 	mov periodo,aux
 	andi periodo,$F0
 	swap periodo
+	cpi periodo,0
+	breq retencion
 	cpi contador,0
 	breq numero0
 
@@ -70,20 +94,16 @@ leer:
 	cpi contador,10
 	breq jump10
 	
-
-	/*
 	cpi contador,11
-	breq numero11
+	breq jump11
 	cpi contador,12
-	breq numero12
+	breq jump12
 	cpi contador,13
-	breq numero13
+	breq jump13
 	cpi contador,14
-	breq numero14
+	breq jump14
 	cpi contador,15
-	breq numero15 */
-
-
+	breq jump15
 
 
 jump0:
@@ -217,21 +237,21 @@ numero11:
 	out porta,r1
 	out portc,r1
 	cp numero,contador
-	breq numero11
+	breq reseteo
 	rjmp tiempo
 
 numero12:
 	out porta,r1
 	out portc,r2
 	cp numero,contador
-	breq numero12
+	breq reseteo
 	rjmp tiempo
 
 numero13:
 	out porta,r1
 	out portc,r3
 	cp numero,contador
-	breq numero13
+	breq reseteo
 	rjmp tiempo
 
 
@@ -239,14 +259,14 @@ numero14:
 	out porta,r1
 	out portc,r4
 	cp numero,contador
-	breq numero14
+	breq reseteo
 	rjmp tiempo
 	
 numero15:
 	out porta,r1
 	out portc,r5
 	cp numero,contador
-	breq numero15
+	breq reseteo
 	rjmp tiempo
 
 reseteo:
@@ -254,7 +274,7 @@ reseteo:
 	rjmp tiempo
 
 tiempo:
-	ldi  r17, 8;21
+	ldi  r17, 21;21
     ldi  r18, 75 ;75
     ldi  r19, 191 ;191
 L1: dec  r19
@@ -269,6 +289,3 @@ L1: dec  r19
 	brne tiempo
 	inc contador
 	rjmp jumpLeer2
-
-
-
