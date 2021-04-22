@@ -41,34 +41,34 @@ leer:
 	breq numero0
 
 	cpi contador,1
-	breq numero1
+	breq jump1
 
 	cpi contador,2
-	breq numero2
+	breq jump2
 
 	cpi contador,3
-	breq numero3
+	breq jump3
 
 	cpi contador,4
-	breq numero4
+	breq jump4
 
 	cpi contador,5
-	breq numero5
+	breq jump5
 
 	cpi contador,6
-	breq numero6
+	breq jump6
 
 	cpi contador,7
-	breq numero7
+	breq jump7
 
 	cpi contador,8
-	breq numero8
+	breq jump8
 
 	cpi contador,9
-	breq numero9
+	breq jump9
 	
 	cpi contador,10
-	breq numero10
+	breq jump10
 	
 
 	/*
@@ -84,39 +84,57 @@ leer:
 	breq numero15 */
 
 
-tiempo:
-	ldi  r17, 8;21
-    ldi  r18, 75 ;75
-    ldi  r19, 191 ;191
-L1: dec  r19
-    brne L1
-    dec  r18
-    brne L1
-    dec  r17
-    brne L1
-    nop
-	dec periodo
-	cpi periodo,0
-	brne tiempo
-	inc contador
-	rjmp leer
 
-reseteo:
-	ldi contador,255
-	rjmp tiempo
+
+jump0:
+	rjmp numero0
+jump1:
+	rjmp numero1
+jump2:
+	rjmp numero2
+jump3:
+	rjmp numero3
+jump4:
+	rjmp numero4
+jump5:
+	rjmp numero5
+jump6:
+	rjmp numero6
+
+jumpLeer1:
+	rjmp leer
+jump7:
+	rjmp numero7
+jump8:
+	rjmp numero8
+jump9:
+	rjmp numero9
+jump10:
+	rjmp numero10
+jump11:
+	rjmp numero11
+jump12:
+	rjmp numero12
+jump13:
+	rjmp numero13
+jump14:
+	rjmp numero14
+jump15:
+	rjmp numero15
+
 
 numero0:
 	out porta,r0
 	out portc,r0
 	cp numero,contador
-	breq reseteo
+	breq jumpReseteo
 	rjmp tiempo
 
 numero1:
 	out porta,r0
 	out portc,r1
 	cp numero,contador
-	breq reseteo
+	breq jumpReseteo
 	rjmp tiempo
 
 
@@ -124,7 +142,7 @@ numero2:
 	out porta,r0
 	out portc,r2
 	cp numero,contador
-	breq reseteo
+	breq jumpReseteo
 	rjmp tiempo
 
 
@@ -132,7 +150,7 @@ numero3:
 	out porta,r0
 	out portc,r3
 	cp numero,contador
-	breq reseteo
+	breq jumpReseteo
 	rjmp tiempo
 
 
@@ -140,7 +158,7 @@ numero4:
 	out porta,r0
 	out portc,r4
 	cp numero,contador
-	breq numero4
+	breq jumpReseteo
 	rjmp tiempo
 
 
@@ -148,7 +166,7 @@ numero5:
 	out porta,r0
 	out portc,r5
 	cp numero,contador
-	breq numero5
+	breq jumpReseteo
 	rjmp tiempo
 
 
@@ -156,15 +174,16 @@ numero6:
 	out porta,r0
 	out portc,r6
 	cp numero,contador
-	breq numero6
+	breq jumpReseteo
 	rjmp tiempo
+
 
 
 numero7:
 	out porta,r0
 	out portc,r7
 	cp numero,contador
-	breq numero7
+	breq jumpReseteo
 	rjmp tiempo
 
 
@@ -172,17 +191,21 @@ numero8:
 	out porta,r0
 	out portc,r8
 	cp numero,contador
-	breq numero8
+	breq jumpReseteo
 	rjmp tiempo
-
 
 numero9:
 	out porta,r0
 	out portc,r9
 	cp numero,contador
-	breq reseteo
+	breq jumpReseteo
 	rjmp tiempo
 
+jumpLeer2:
+	rjmp jumpLeer1
+
+jumpReseteo:
+	rjmp reseteo
 
 numero10:
 	out porta,r1
@@ -190,9 +213,6 @@ numero10:
 	cp numero,contador
 	breq reseteo
 	rjmp tiempo
-
-/*
-
 numero11:
 	out porta,r1
 	out portc,r1
@@ -229,6 +249,26 @@ numero15:
 	breq numero15
 	rjmp tiempo
 
+reseteo:
+	ldi contador,255
+	rjmp tiempo
 
-*/
+tiempo:
+	ldi  r17, 8;21
+    ldi  r18, 75 ;75
+    ldi  r19, 191 ;191
+L1: dec  r19
+    brne L1
+    dec  r18
+    brne L1
+    dec  r17
+    brne L1
+    nop
+	dec periodo
+	cpi periodo,0
+	brne tiempo
+	inc contador
+	rjmp jumpLeer2
+
+
 
