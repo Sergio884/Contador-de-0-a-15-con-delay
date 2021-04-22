@@ -1,5 +1,7 @@
 .include "m8535def.inc"
 .def aux = r16
+.def periodo = r20
+.def numeroU = r21
 ser aux
 out ddra,aux
 out ddrc,aux
@@ -28,8 +30,32 @@ out portb,aux
 	clr zh
 leer:
 	in aux,pinb
-	out porta,r9
-	out portc,r0
-	rjmp leer
+	mov numeroU,aux
+	andi numeroU,$0F
+	mov periodo,aux
+	andi periodo,$F0
+	swap periodo
+	ldi zl,0
+	add zl,numeroU
+	ld numeroU,z
+	out porta,r0
+	out portc,numeroU
+	rjmp tiempo
+
+tiempo:
+	ldi  r17, 6;21
+    ldi  r18, 75 ;75
+    ldi  r19, 191 ;191
+L1: dec  r19
+    brne L1
+    dec  r18
+    brne L1
+    dec  r17
+    brne L1
+    nop
+	dec periodo
+	cpi periodo,0
+	breq leer
+	rjmp tiempo
 
 
