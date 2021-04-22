@@ -1,0 +1,64 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.12</VERSION>
+ <DEVICE>ATmega8535</DEVICE>
+ <WORKING_DIR>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8535def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <leer><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>55</LINE></leer>
+  <retencion><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>36</LINE></retencion>
+  <retencionMayor><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>46</LINE></retencionMayor>
+  <numero0><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>146</LINE></numero0>
+  <jump1><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>111</LINE></jump1>
+  <jump2><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>113</LINE></jump2>
+  <jump3><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>115</LINE></jump3>
+  <jump4><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>117</LINE></jump4>
+  <jump5><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>119</LINE></jump5>
+  <jump6><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>121</LINE></jump6>
+  <jump7><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>126</LINE></jump7>
+  <jump8><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>128</LINE></jump8>
+  <jump9><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>130</LINE></jump9>
+  <jump10><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>132</LINE></jump10>
+  <jump11><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>134</LINE></jump11>
+  <jump12><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>136</LINE></jump12>
+  <jump13><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>138</LINE></jump13>
+  <jump14><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>140</LINE></jump14>
+  <jump15><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>142</LINE></jump15>
+  <jump0><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>109</LINE></jump0>
+  <numero1><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>153</LINE></numero1>
+  <numero2><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>161</LINE></numero2>
+  <numero3><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>169</LINE></numero3>
+  <numero4><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>177</LINE></numero4>
+  <numero5><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>185</LINE></numero5>
+  <numero6><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>193</LINE></numero6>
+  <jumpLeer1><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>124</LINE></jumpLeer1>
+  <numero7><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>202</LINE></numero7>
+  <numero8><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>210</LINE></numero8>
+  <numero9><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>217</LINE></numero9>
+  <numero10><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>230</LINE></numero10>
+  <numero11><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>236</LINE></numero11>
+  <numero12><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>243</LINE></numero12>
+  <numero13><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>250</LINE></numero13>
+  <numero14><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>258</LINE></numero14>
+  <numero15><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>265</LINE></numero15>
+  <jumpReseteo><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>227</LINE></jumpReseteo>
+  <tiempo><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>276</LINE></tiempo>
+  <jumpLeer2><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>224</LINE></jumpLeer2>
+  <reseteo><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>272</LINE></reseteo>
+  <L1><FILE>C:\Users\Sergio\Desktop\6S\Micros\Tarea 5\Contador-de-0-a-15-con-delay\contador0a15.asm</FILE><LINE>280</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>
