@@ -2,8 +2,7 @@
 .def aux = r16
 .def periodo = r20
 .def numero = r21
-.def contador = r27
-ldi contador,0
+.def contador = r22
 ser aux
 out ddra,aux
 out ddrc,aux
@@ -21,6 +20,7 @@ out portb,aux
 	mov r4,r21
 	ldi r22,$6D
 	mov r5,r22
+	clr contador
 	ldi r23,$7D
 	mov r6,r23
 	ldi r24,$27
@@ -42,27 +42,36 @@ leer:
 
 	cpi contador,1
 	breq numero1
+
 	cpi contador,2
 	breq numero2
-	cpi contador,2
-	breq numero2
-	/*
+
 	cpi contador,3
 	breq numero3
+
 	cpi contador,4
 	breq numero4
+
 	cpi contador,5
 	breq numero5
+
 	cpi contador,6
 	breq numero6
+
 	cpi contador,7
 	breq numero7
+
 	cpi contador,8
 	breq numero8
+
 	cpi contador,9
 	breq numero9
+	
 	cpi contador,10
 	breq numero10
+	
+
+	/*
 	cpi contador,11
 	breq numero11
 	cpi contador,12
@@ -118,12 +127,12 @@ numero2:
 	breq reseteo
 	rjmp tiempo
 
-/*
+
 numero3:
 	out porta,r0
 	out portc,r3
 	cp numero,contador
-	breq numero3
+	breq reseteo
 	rjmp tiempo
 
 
@@ -171,7 +180,7 @@ numero9:
 	out porta,r0
 	out portc,r9
 	cp numero,contador
-	breq numero9
+	breq reseteo
 	rjmp tiempo
 
 
@@ -179,9 +188,10 @@ numero10:
 	out porta,r1
 	out portc,r0
 	cp numero,contador
-	breq numero10
+	breq reseteo
 	rjmp tiempo
 
+/*
 
 numero11:
 	out porta,r1
